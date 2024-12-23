@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sweet Treats Ice Cream Parlour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Sweet Treats Ice Cream Parlour</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Banner Section with Background Image -->
+    <section id="home" class="banner">
+        <div class="container">
+            <h2>Indulge in the Best Ice Creams in Town!</h2>
+            <p>Freshly made, creamy, and oh-so-delicious flavors await you.</p>
+            <button onclick="scrollToMenu()">Explore Our Menu</button>
+        </div>
+    </section>
+
+    <!-- Ice Cream Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Flavors</h2>
+            <div class="flavor-cards">
+                <div class="flavor-card">
+                    <div class="flavor-image">
+                        <!-- Image of Vanilla Ice Cream -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gSDrGXza-bKEXRUylUzbDNO_cfPwB58zNQ&s" alt="Vanilla Ice Cream" />
+                    </div>
+                    <h3>Vanilla</h3>
+                    <p class="price">₹100</p> <!-- Price Below Image -->
+                </div>
+                <div class="flavor-card">
+                    <div class="flavor-image">
+                        <!-- Image of Chocolate Ice Cream -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2hefCdYm36_tcyHuFxP7Lb6ZS01LCzCafFA&s" alt="Chocolate Ice Cream" />
+                    </div>
+                    <h3>Chocolate</h3>
+                    <p class="price">₹120</p> <!-- Price Below Image -->
+                </div>
+                <div class="flavor-card">
+                    <div class="flavor-image">
+                        <!-- Image of Strawberry Ice Cream -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdExA7qsPmcOaiiRmA0Hhjmx4fD1JLIM1DIA&s"alt="Strawberry Ice Cream" />
+                    </div>
+                    <h3>Strawberry</h3>
+                    <p class="price">₹100</p> <!-- Price Below Image -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Sweet Treats, where every scoop is made with love and the finest ingredients. We offer a wide variety of flavors, toppings, and milkshakes to satisfy your cravings.</p>
+            
+            <!-- Advertisement Section -->
+            <div class="advertisement">
+                <h3>Advertise with Us!</h3>
+                <p>Get your ad featured here for just ₹50!</p>
+                <button onclick="alert('Contact us to place your ad!')">Place an Ad</button>
+            </div>
+
+            <!-- Image of Ice Cream Sundae -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN17vK6cejFMaQ9qQuCpoGCzai21Ux8NBOit356U74zyhEVMdMaq00EZIVvLUbltR7VfKvgtNtpFSjQ1AbsGf2lovTx1b1plOIaCWjVQ" alt="Ice Cream Sundae" class="about-image" />
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-status"></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sweet Treats Ice Cream Parlour. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
